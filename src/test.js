@@ -42,6 +42,7 @@ const player = {
     player.ui.demo.scrollTop = player.ui.demo.scrollHeight
   },
   play: () => {
+    window.clearInterval(player.id)
     player.id = setInterval(player.run, player.time)
   },
   pause: () => {
